@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/result.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -53,37 +53,35 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [tailwind](https://tailwindcss.com/) - CSS library
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1.ได้เรียนรู้การ component ส่วน FAQs accordion 
+2.ได้เรียนรู้ Js การกดแล้วให้ข้อความแสดง เป็นการจัดการ DOM
+3.ฝึกการใช้ tailwind library
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="w-[90%] md:w-[60%] lg:w-[40%] xl:w-[35%] bg-[var(--White)] px-7 pt-8 pb-4 rounded-2xl shadow-lg">
 ```
-```css
+<!-- ```css
 .proud-of-this-css {
   color: papayawhip;
 }
-```
+``` -->
+การใช้ classList.toggle
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+Id_textFAQs[button.id].classList.toggle('sub_hide');
+```
+
+การ querySelectorAll สำหรับจัดการ elements ที่เหมือนกันได้ดี
+```js
+const Id_textFAQs = document.querySelectorAll('.sub_hide');
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
